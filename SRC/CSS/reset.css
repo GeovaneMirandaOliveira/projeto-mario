@@ -1,0 +1,16 @@
+/*Seleciona todos elementos da pagina , para resetar tudo*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+
+}
+
+a {
+    /*Retira a cor do link*/
+    text-decoration: none;
+}

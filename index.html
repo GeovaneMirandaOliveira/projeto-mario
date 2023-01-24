@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <!muda o icone da pagina no navegador>
+    <link rel="shortcut icon" href="./SRC/img/favicon.ico" type="image/x-icon">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!Estilos de fonts da internet>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./SRC/CSS/reset.css">
+    <link rel="stylesheet" href="./SRC/CSS/estilos.css">
+    <link rel="stylesheet" href="./SRC/CSS/responsivo.css">
+
+    <title>Super Mario Bros - O Filme</title>
+</head>
+<body>
+
+    <div class="fundo-video">
+        <video class="video" autoplay Loop muted >
+            <!procura na pasta aonde ta o video>
+            <source src="./SRC/video/video-mario.mp4" type="video/mp4">
+        </video>
+    </div>
+
+
+    <!titulo>
+    <header class="cabecalho">
+        <a>
+            <img class="logo" src="./SRC/img/logo-chapeu-mario.png" alt="logo chapeú mario">
+        </a>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Detalhes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!Conteudo Principal>
+    <main class="container">
+        <div class="informcacoes">
+
+            <img class="imagem-titulo" src="./SRC/img/titulo.png" alt="imagem do titulo do filme">
+
+            <p class="descricao">Ele conta a história dos irmãos Mario, como eles encontram um universo paralelo, onde o Rei Bowser é um ditador. Eles têm que resgatar a Princesa Peach e parar Bowser de tentar mesclar as dimensões para que ele pudesse se tornar um ditador de ambos os mundos.</p>
+
+            <button class="botao-trailer">Veja o Trailer</button>
+
+        </div>
+
+        <img src="./SRC/img/super-mario-chars.png" alt="imagem dos personagens" class="mario">
+
+        <div class="modal">
+            <div class="conteudo-modal">
+                <span class="fechar-modal">X</span>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Cb4WV4aXBpk" title="Trailer oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </main>
+
+    <script src="./SRC/Js/index.js"></script>
+</body>
+</html>
